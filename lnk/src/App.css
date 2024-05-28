@@ -461,6 +461,42 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1.8rem 1.4rem 2rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.about .grid .card:hover{
+    background-color: var(--secondary-color);
+    border-radius: 1.2rem;
+    color: #fff;
+}
+
+.about .grid .card:hover .title,
+.about .grid .card:hover .number,
+.about .grid .card:hover .description{
+    animation: moveUp 0.3s linear forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translate(0, 0);
+    }
+    75% {
+        transform: translate(0, -15px);
+    }
+    100% {
+        transform: translate(0, -12px);
+    }
+}
+
+.about .grid .card:hover .title{
+    border: none;
+    padding-top: 0;
+}
+
+.about .grid .card:hover .title .circle{
+    background-color: #fff;
 }
 
 .about .grid .card .title{
