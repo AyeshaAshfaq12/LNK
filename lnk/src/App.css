@@ -243,12 +243,12 @@ i {
 
 .homeSection {
     width: 100%;
+    margin-top: 6.1rem !important;
 }
 
 .heroBg {
     width: 90%;
     margin: 0 auto;
-    margin-top: 6.1rem !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -441,7 +441,7 @@ i {
 
 .about {
     width: 90%;
-    margin: 2rem auto;
+    margin: 5rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -465,7 +465,7 @@ i {
     display: grid;
     place-items: start center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5.5rem 8rem;
+    gap: 2rem 8rem;
 }
 
 .about .grid .card {
@@ -475,7 +475,7 @@ i {
     justify-content: center;
     padding: 1.8rem 1.4rem 2rem;
     cursor: pointer;
-    transition: all 0.1s ease-in;
+    transition: all 0.3s ease-in-out;
 }
 
 .about .grid .card:hover {
@@ -547,9 +547,9 @@ i {
 /* =============================================== */
 
 .scroller {
+    /* position: fixed; */
     width: 100%;
     padding: 5rem 0;
-    width: 100%;
     background-color: var(--secondary-color);
 }
 
@@ -653,7 +653,7 @@ i {
 }
 
 .customers .grid {
-    width: 100%;
+    width: 94%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -671,6 +671,7 @@ i {
     margin: 1rem 0;
     border-radius: 1rem;
     background-color: #F9F9F9;
+    transition: all 0.3s ease-in-out;
 }
 
 .customers .grid .review:hover {
@@ -784,6 +785,7 @@ i {
     padding: 0.6rem 0.6rem 0 3rem;
     display: block;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
 .faq .panel .panel-content {
@@ -804,7 +806,7 @@ i {
     transition: 0.4s ease;
 }
 
-.faq .panel ~ .panel-content p{
+.faq .panel~.panel-content p {
     padding: 1rem 0;
 }
 
@@ -813,7 +815,7 @@ i {
     opacity: 1;
 }
 
-.faq .panel ~ .panel-content {
+.faq .panel~.panel-content {
     opacity: 0;
     height: 0;
     padding: 0 0.8rem;
@@ -838,10 +840,10 @@ i {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    -webkit-transition: .2s ease;
-    -moz-transition: .2s ease;
-    -o-transition: .2s ease;
-    transition: .2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .faq .panel:checked~.plus {
@@ -857,10 +859,266 @@ i {
 
 /* =============================================== */
 
+.costs {
+    width: 90%;
+    margin: 9rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.costs .heading {
+    width: 60%;
+    text-align: center;
+    font-size: var(--large-font-size);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.costs .description {
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: #777E90;
+    margin: 1.5rem 0 2.5rem;
+}
+
+.costs .schedule {
+    padding: 0.6rem 2rem;
+    font-size: var(--small-font-size);
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    border-radius: 1.2rem;
+    color: #fff;
+}
+
+
+/* =============================================== */
+
+footer {
+    width: 100%;
+    padding: 2.7rem 4rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer .logo img {
+    width: 15%;
+}
+
+footer .info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: var(--extra-small-font-size);
+    font-weight: 600;
+
+}
+
+footer .info a {
+    color: #0099ff;
+    padding-left: 0.5rem;
+    border-left: 1px solid #fff;
+}
+
+footer .info a:hover {
+    text-decoration: underline;
+}
+
+footer .info .copyright {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .info .copyright:hover {
+    color: #FFB01F;
+}
 
 
 
+/*#endregion  */
 
 
+
+/* ================= CONTACT =================== */
+
+/*#region */
+
+.contactSection {
+    width: 100%;
+    margin-top: 6.1rem !important;
+}
+
+.contactSection .contactForm {
+    width: 86%;
+    margin: 0 auto 3rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.contactSection .contactForm .sectionName {
+    margin-bottom: 2rem;
+    font-size: var(--extra-small-font-size);
+    font-weight: bolder;
+    color: #C4C4C4;
+}
+
+.contactSection .contactForm .formText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactSection .contactForm .form {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactSection .contactForm .form .heading {
+    font-size: var(--large-font-size);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.contactSection .contactForm .form .description {
+    margin: 1rem 0;
+    font-size: var(--medium-font-size);
+    color: var(--body-font-color);
+}
+
+.contactSection .contactForm .form form {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactSection .contactForm form input,
+.contactSection .contactForm form textarea {
+    width: 90%;
+    margin: 0.8rem 0;
+    padding: 1.3rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: #F5F5F5;
+}
+
+.contactSection .contactForm form textarea {
+    height: 7rem;
+}
+
+.contactSection .contactForm form input::placeholder,
+.contactSection .contactForm form textarea::placeholder {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: 400;
+    color: var(--body-font-color);
+}
+
+.contactSection .contactForm form button {
+    width: 90%;
+    margin: 0.8rem 0;
+    padding: 1.2rem 0;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: var(--font-size);
+    font-weight: 700;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.contactSection .contactForm form button:hover {
+    background-color: #393A4B;
+}
+
+.contactSection .contactForm .text {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactSection .contactForm .text img {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.contactSection .contactForm .text .contactAddress {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactSection .contactForm .text .contactAddress .detailCard {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactSection .text .contactAddress .detailCard .details {
+    margin: 0.6rem 0;
+}
+
+.contactSection .text .contactAddress .detailCard .details .heading {
+    margin: 0.5rem 0;
+    font-size: var(--font-size);
+    font-weight: 700;
+}
+
+.contactSection .text .contactAddress .detailCard .details .description {
+    font-size: var(--small-font-size);
+    font-weight: 600;
+    color: #6D6D6D;
+    line-height: 1.8;
+}
+
+/* ====================================================== */
+
+.contactSection footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactSection footer img {
+    width: 8%;
+}
+
+.contactSection footer span {
+    width: 100%;
+    margin: 1.8rem 0;
+    border-top: 2px solid #353945;
+}
+
+.contactSection footer .copyright {
+    font-size: var(--small-font-size);
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactSection footer .copyright:hover {
+    color: #FFB01F;
+}
 
 /*#endregion  */

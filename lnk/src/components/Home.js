@@ -5,6 +5,7 @@ import '../App.css';
 
 // ================ IMPORT IMAGES ================= //
 
+import logo from '../assets/logo.png';
 import bg1 from '../assets/bg1.png';
 import bg2 from '../assets/bg2.png';
 import bg3 from '../assets/bg3.png';
@@ -31,24 +32,19 @@ const Home = () => {
         <div className="bgImg">
 
           <div className="bg1">
-            <img src={bg1
-            } />
+            <img src={bg1} />
           </div>
           <div className="bg2">
-            <img src={bg2
-            } />
+            <img src={bg2} />
           </div>
           <div className="bg3">
-            <img src={bg3
-            } />
+            <img src={bg3} />
           </div>
           <div className="ball1">
-            <img src={ball
-            } />
+            <img src={ball} />
           </div>
           <div className="ball2">
-            <img src={ball
-            } />
+            <img src={ball} />
           </div>
         </div>
 
@@ -425,6 +421,25 @@ const Home = () => {
         </div>
 
       </div>
+
+      <div className="costs">
+        <p className="heading">Reduce costs, supercharge sales, and increase customer loyalty</p>
+        <p className="description">What are you waiting for?</p>
+        <Link className="schedule" to="/contact">Schedule a demo✨</Link>
+      </div>
+
+      <footer>
+        <div className="logo">
+          <img src={logo} />
+        </div>
+        <div className="info">
+          <p className="copyright">Copyright © 2024 MICHASAN SAPI DE CV. All rights reserved</p>
+          <Link to="/">Terms & Conditions</Link>
+          <Link to="/">Privacy Notice</Link>
+        </div>
+
+      </footer>
+
     </div>
   )
 }
