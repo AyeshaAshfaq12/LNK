@@ -3,7 +3,8 @@
 /* CSS Variables */
 
 :root {
-    --primary-color: #3FBF7B;
+    --primary-color: #00236C;
+    --tertiary-color: #84ACEE;
     --secondary-color: #07091E;
 
     --linear-gradient: linear-gradient(180deg, #552501 0%, #A54805 100%);
@@ -147,6 +148,7 @@ i {
 
 .navMenu ul li:nth-child(2):hover .contactLink {
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 .navMenu ul li .dot {
@@ -370,7 +372,7 @@ i {
     padding: 0.6rem 2rem;
     font-size: var(--small-font-size);
     font-weight: 600;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border-radius: 1.2rem;
     color: #fff;
 }
@@ -942,7 +944,7 @@ i {
     padding: 0.6rem 2rem;
     font-size: var(--small-font-size);
     font-weight: 600;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border-radius: 1.2rem;
     color: #fff;
 }

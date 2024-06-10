@@ -61,11 +61,10 @@ const Home = () => {
         </div>
 
         <div className="igniteText">
-          <p className="heading green">Ignite sales </p>
-          <p className="heading">with your corner stores</p>
-          <p className="description">Offer trade credit instantly to your buyers at checkout. We'll pay you the same day and
-            own 100% of the risk.</p>
-          <Link className="schedule" to="/contact">Schedule a demo✨</Link>
+          <p className="heading green">Revolutionizing Pharma</p>
+          <p className="heading"> Compliance and Networking</p>
+          <p className="description">AI-driven solutions for fair market valuation and professional connectivity.</p>
+          <Link className="schedule" to="/contact">Get Started✨</Link>
         </div>
 
         <div className="withWithout">
